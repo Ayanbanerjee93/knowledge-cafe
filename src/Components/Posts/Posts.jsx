@@ -7,11 +7,6 @@ const Posts = (props) => {
     const { date, title, author, hashtags, profile_pic, blog_img, reading_time } = props.blog;
     
     const bookMarkButton = props.bookMarkButton;
-    console.log(bookMarkButton)
-
-    
-
-    // const [post , setPost] = useState([]);
 
   
     return (
@@ -40,7 +35,7 @@ const Posts = (props) => {
                                <FontAwesomeIcon 
                               
                                className='bookmark-btn-icon' icon={faBookmark}
-                               onClick={ ()=> bookMarkButton()} />
+                               onClick={ ()=>bookMarkButton(props.blog)} />
                                </div>
 
                             </div>

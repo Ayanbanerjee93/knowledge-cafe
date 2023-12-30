@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import './Blogs.css';
 import Posts from '../Posts/Posts';
+import Bookmark from '../Bookmarks/Bookmark';
 
 const Blogs = () => {
 
     const [blogs, setBlogs] = useState([]);
+    const [blogTopic , setBlogTopic] = useState([]);
+    
 
     useEffect( ()=>{
 
@@ -14,12 +17,12 @@ const Blogs = () => {
 
     },[])
 
-    const bookMarkButton = () =>{
-        for(const blog of blogs){
-            console.log(blog)
-        }
-       
-    }
+
+    const bookMarkButton = (blog) => {
+
+       const newBlogTopic=[...blogTopic, blog ]
+       setBlogTopic(newBlogTopic)
+}
     return (
         <div className='blog-container'>
 
@@ -41,17 +44,21 @@ const Blogs = () => {
            </div>
 
 
-           {/* bookmark section */}
+                       {/* bookmark section */}
+
         <div className="">
+
             <div className="spent-time">
                 <h4>Spent time on read: 177m</h4>
             </div>
+
             <div className="bookmarked-area">
 
-            <h3>All book marks showing here:{blogs.length} </h3>
-            </div>
+                   <Bookmark blogTopic={blogTopic}></Bookmark>
 
             </div>
+        </div>
+            
         </div>
 
     );
