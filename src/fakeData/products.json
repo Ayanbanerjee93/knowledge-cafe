@@ -5,8 +5,8 @@
         "title": "Beyond the Classroom: A Blueprint for Success in Your First Job as a Self-Educated Individual",
         "author": "Taylor Trailblazer",
         "hashtags": "#SelfStartSuccess #CareerCrafting",
-        "profile_pic": "../images/boy1.png",
-        "blog_img": "../images/4.jpg",
+        "profile_pic": "https://unsplash.com/photos/man-wearing-henley-top-portrait-7YVZYZeITc8",
+        "blog_img": "https://unsplash.com/photos/red-apple-fruit-on-four-pyle-books-OyCl7Y4y0Bk",
         "reading_time": "06 min Read"
     },
     {
@@ -15,8 +15,8 @@
         "title": "Crafting Your Future: Navigating the Path to Your First Job as a Self-Learner",
         "author": "Jordan LearningCurve",
         "hashtags": "#BeyondClassroom #SelfEducationJourney",
-        "profile_pic": "../images/boy2.png",
-        "blog_img": "../images/2.png",
+        "profile_pic": "https://unsplash.com/photos/closeup-photography-of-woman-smiling-mEZ3PoFGs_k",
+        "blog_img": "https://unsplash.com/photos/three-people-around-a-laptop-with-stickers-on-it-wmhehhmeA1o",
         "reading_time": "33 min Read"
     },
     {
@@ -25,8 +25,8 @@
         "title": "Skills Unleashed: Your Guide to Kick starting a Career as a Self-Taught Professional",
         "author": "Serena SelfStart",
         "hashtags": "#SkillsUnleashed #SelfTaughtCareer",
-        "profile_pic": "../images/girl1.jpg",
-        "blog_img": "../images/3.png",
+        "profile_pic": "https://unsplash.com/photos/a-man-with-a-beard-wearing-a-white-shirt-lNmwauHwBYE",
+        "blog_img": "https://unsplash.com/photos/black-remote-control-on-red-table-6sAl6aQ4OWI",
         "reading_time": "11 min Read"
     },
     {
@@ -35,8 +35,8 @@
         "title": "Educate, Elevate, Employ: Strategies for Landing Your Initial Job Without Formal Education",
         "author": "Alex Mastery",
         "hashtags": "#EducateElevateEmploy #AlternativePathways",
-        "profile_pic": "../images/girl2.jpg",
-        "blog_img": "../images/blog-4.png",
+        "profile_pic": "https://unsplash.com/photos/a-woman-with-curly-hair-smiling-at-the-camera-eTHYXxjJRws",
+        "blog_img": "https://unsplash.com/photos/young-contemporary-software-developer-working-with-decoded-data-while-sitting-in-front-of-computer-monitor-in-office-at-night-YYtgQNhmJSY",
         "reading_time": "08 min Read"
     }
 ]

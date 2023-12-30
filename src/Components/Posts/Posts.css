@@ -1,0 +1,58 @@
+.blog-img{
+    width: 845px;
+    height: 450px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid #000;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    margin-bottom: 30px;
+}
+.profile-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 810px;
+    padding: 20px;
+    /* background-color: aqua; */
+}
+.profile{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    line-height: 7px;
+    margin-bottom: 16px;
+    
+    
+}
+.author-details{
+   margin-left: 20px;
+}
+
+.profile-pic{
+    width: 60px;
+    /* margin-left: 10px; */
+    height: 60px;
+    flex-shrink: 0;
+}
+
+.bookmark-area{
+    display: flex;
+    text-align: center;
+}
+
+.bookmark-btn-icon{
+    width: 24px;
+    height: 24px;
+    margin-top: 21px;
+    margin-left: 10px;
+}
+
+.bookmark-text p{
+    color: rgba(17, 17, 17, 0.60);
+    text-align: right;
+    font-family: Exo 2;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
