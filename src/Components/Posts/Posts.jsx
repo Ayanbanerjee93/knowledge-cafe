@@ -9,7 +9,7 @@ const Posts = (props) => {
 
     
     return (
-        <div>
+        <div className='blog-body'>
                         <img className='blog-img' src={blog_img} srcSet='' />
             
             <div className="profile-area">
@@ -38,6 +38,17 @@ const Posts = (props) => {
                         </div>
 
                         {/* name section of the blog */}
+
+                        <h1 className="blog-title">
+                            {title}
+                        </h1>
+                        <div className='blog-hashtags'>
+                            {hashtags}
+                        </div>
+                        <div className='mark-as-read'>
+                            <a href="">Mark as read</a>
+                        </div>
+                        <hr className='hr' />
             </div>
            
         

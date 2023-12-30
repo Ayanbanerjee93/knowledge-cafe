@@ -1,6 +1,11 @@
+.blog-body{
+    /* border: 1px solid; */
+    width: 959px;
+    margin-top: 13px;
+}
 .blog-img{
-    width: 845px;
-    height: 450px;
+    width: 950px;
+    height: 550px;
     flex-shrink: 0;
     border-radius: 8px;
     border: 1px solid #000;
@@ -11,8 +16,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 810px;
-    padding: 20px;
+    width: 950px;
+    /* padding: 20px; */
     /* background-color: aqua; */
 }
 .profile{
@@ -26,11 +31,12 @@
 }
 .author-details{
    margin-left: 20px;
+   margin-top: 40px;
 }
 
 .profile-pic{
     width: 60px;
-    /* margin-left: 10px; */
+    margin-top: 36px;
     height: 60px;
     flex-shrink: 0;
 }
@@ -55,4 +61,39 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+}
+.blog-title{
+    color: #111;
+    font-family: 'Exo 2';
+    font-size: 25px;
+    font-style: bold;
+    font-weight: 700;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    
+}
+.blog-hashtags{
+    color: rgba(17, 17, 17, 0.60);
+    font-family: 'Exo 2';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.mark-as-read{
+    color: #6047EC;
+    font-family: 'Exo 2';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration-line: underline;
+    margin-bottom: 45px;
+}
+
+.hr{
+    width: 955px;
+    margin-bottom: 30px;
 }
