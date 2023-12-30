@@ -1,0 +1,45 @@
+
+.header{
+    /* background-color: rgb(180, 226, 180); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    /* width: 100%; */
+}
+
+.header h1{
+    color: #111;
+    font-family: 'Exo 2';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+hr{
+    width: 1370px;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-menu {
+    
+    
+}
+.nav-menu a{
+    margin-right: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgba(17, 17, 17, 0.60);
+}
+.nav-menu a:hover{
+    color: orange;
+}
+

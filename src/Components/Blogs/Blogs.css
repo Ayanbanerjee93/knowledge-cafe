@@ -1,0 +1,12 @@
+.blog-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 20px;
+}
+
+
+/* book mark section  */
+.bookmark-area{
+    border-radius: 8px;
+    background: rgba(17, 17, 17, 0.05);
+}
