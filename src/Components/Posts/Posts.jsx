@@ -1,13 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 import './Posts.css';
 
 const Posts = (props) => {
-    console.log(props.blog)
     const { date, title, author, hashtags, profile_pic, blog_img, reading_time } = props.blog;
+    
+    const bookMarkButton = props.bookMarkButton;
+    console.log(bookMarkButton)
 
     
+
+    // const [post , setPost] = useState([]);
+
+  
     return (
         <div className='blog-body'>
                         <img className='blog-img' src={blog_img} srcSet='' />
@@ -31,7 +37,10 @@ const Posts = (props) => {
                                </div>
                                
                                <div className='bookmark-icon'>
-                               <FontAwesomeIcon className='bookmark-btn-icon' icon={faBookmark} />
+                               <FontAwesomeIcon 
+                              
+                               className='bookmark-btn-icon' icon={faBookmark}
+                               onClick={ ()=> bookMarkButton()} />
                                </div>
 
                             </div>

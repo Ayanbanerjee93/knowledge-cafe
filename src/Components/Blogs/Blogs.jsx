@@ -13,6 +13,13 @@ const Blogs = () => {
         .then(data => setBlogs(data))
 
     },[])
+
+    const bookMarkButton = () =>{
+        for(const blog of blogs){
+            console.log(blog)
+        }
+       
+    }
     return (
         <div className='blog-container'>
 
@@ -26,6 +33,7 @@ const Blogs = () => {
                    blogs.map(blog => <Posts
                     key={blog.id}
                     blog={blog}
+                    bookMarkButton={bookMarkButton}
 
                      ></Posts>) 
                  }
