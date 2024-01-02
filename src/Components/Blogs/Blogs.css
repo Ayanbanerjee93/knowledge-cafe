@@ -10,21 +10,7 @@
 
 
 /* book mark section  */
-.spent-time{
-    margin-top: 60px;
-    color: #6047EC;
-    width: 350px;
-    height: 80px;
-    margin-top: 25px;
-    padding-left: 15px;
-    font-family: 'Exo 2';
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 73%;
-    border-radius: 8px;
-    border: 1px solid #6047EC;
-    background: rgba(96, 71, 236, 0.10);
-}
+
 
 .bookmarked-area{
     /* text-align: center; */

@@ -1,0 +1,14 @@
+.spent-time{
+    color: #6047EC;
+    width: 314px;
+    height: 54px;
+    margin-top: 0px;
+    padding-left: 14px;
+    font-family: 'Exo 2';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 88%;
+    border-radius: 8px;
+    border: 1px solid #6047EC;
+    background: rgba(96, 71, 236, 0.10);
+}

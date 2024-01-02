@@ -2,19 +2,19 @@ import React, { useEffect, useState } from 'react';
 import './Blogs.css';
 import Posts from '../Posts/Posts';
 import Bookmark from '../Bookmarks/Bookmark';
+import Time from '../Time/Time';
+
 
 const Blogs = () => {
     const [blogs, setBlogs] = useState([]);
     const [blogTopic, setBlogTopic] = useState([]);
-    const [dataFetched, setDataFetched] = useState(false);
+    const [spentTime, setSpentTime] = useState([]);
+    
 
     useEffect(() => {
         fetch('/public/fakeData/products.json')
             .then(res => res.json())
-            .then(data => {
-                setBlogs(data);
-                setDataFetched(true);
-            })
+            .then(data => {setBlogs(data)})
             .catch(error => {
                 console.error('Error fetching data:', error);
             });
@@ -23,12 +23,16 @@ const Blogs = () => {
     const bookMarkButton = (blog) => {
         const newBlogTopic = [...blogTopic, blog];
         setBlogTopic(newBlogTopic);
-        console.log(newBlogTopic);
+        setSpentTime(spentTime + parseInt(blog.reading_time, 10));
+        // console.log(newBlogTopic);
     }
+
+
 
     return (
         <div className='blog-container'>
-            {/* all blogs display area */}
+            {/*=========================All Blogs Display Area=========================  */}
+            
             <div className="blog-body">
                 {blogs.map(blog => (
                     <Posts
@@ -40,14 +44,30 @@ const Blogs = () => {
             </div>
 
             {/* bookmark section */}
-            <div className="">
-                <div className="spent-time">
-                    {/* <h4>Spent time on read: 177m</h4> */}
-                </div>
+            <div className="">  
+
+               
                 <div className="bookmarked-area">
-                    <Bookmark blogTopic={blogTopic} />
+
+                    <Time key={spentTime.id} 
+                    spentTime={spentTime} />
+
+                    <Bookmark
+                    key={blogTopic.id}
+                    blogTopic={blogTopic}/>
+                    
                 </div>
             </div>
+
+             
+       {/* Spent time section */}
+      {
+       
+          
+
+      }
+
+           
         </div>
     );
 };

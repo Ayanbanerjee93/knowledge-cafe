@@ -1,15 +1,20 @@
 import React from 'react';
+import './Bookmark.css';
 
 const Bookmark = (props) => {
     const blogTopic = props.blogTopic;
+    
 
     return (
         <div>
-            <h3>All bookmarks showing here: {blogTopic.length}</h3>
+        
+         
+            <h3>All bookmarks showing here: {}</h3>
             <div>
                 {blogTopic.map(blog => (
-                    <div key={blog.id}>
-                        <p>{blog.author}</p>
+                    <div className='bookmark-body' key={blog.id}>
+                       
+                        <p>Title: {blog.title}</p>
                         
                     </div>
                 ))}
