@@ -8,7 +8,7 @@ import Time from '../Time/Time';
 const Blogs = () => {
     const [blogs, setBlogs] = useState([]);
     const [blogTopic, setBlogTopic] = useState([]);
-    const [spentTime, setSpentTime] = useState([]);
+    const [spentTime, setSpentTime] = useState(0);
     
 
     useEffect(() => {
@@ -21,11 +21,20 @@ const Blogs = () => {
     }, []);
 
     const bookMarkButton = (blog) => {
-        const newBlogTopic = [...blogTopic, blog];
-        setBlogTopic(newBlogTopic);
-        setSpentTime(spentTime + parseInt(blog.reading_time, 10));
-        // console.log(newBlogTopic);
-    }
+        
+        const isBlogAlreadyAdded = blogTopic.find((addedBlog) => addedBlog.id === blog.id);
+    
+        if (isBlogAlreadyAdded) {
+         
+            alert('This blog is already in your bookmarks!');
+        } else {
+            
+            const newBlogTopic = [...blogTopic, blog];
+            setBlogTopic(newBlogTopic);
+            setSpentTime(spentTime + parseInt(blog.reading_time, 10));
+        }
+    };
+    
 
 
 

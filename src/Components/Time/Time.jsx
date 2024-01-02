@@ -8,7 +8,7 @@ const Time = (props) => {
     return (
         <div>
             <div className="spent-time">
-                <p>Spent Time on Read: {spentTime} minutes </p>
+                <p>Spent Time on Read: <span> {spentTime} minutes </span></p>
             </div>
         </div>
     );

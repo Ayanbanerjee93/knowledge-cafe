@@ -9,7 +9,7 @@ const Bookmark = (props) => {
         <div>
         
          
-            <h3>All bookmarks showing here: {}</h3>
+            <h3 className='Bookmarked-Blogs-length'>Bookmarked Blogs :  {blogTopic.length}</h3>
             <div>
                 {blogTopic.map(blog => (
                     <div className='bookmark-body' key={blog.id}>
