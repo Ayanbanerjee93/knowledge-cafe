@@ -13,12 +13,18 @@ const Blogs = () => {
 
     useEffect(() => {
         fetch('/public/fakeData/products.json')
-            .then(res => res.json())
-            .then(data => {setBlogs(data)})
+            .then(res => {
+                if (!res.ok) {
+                    throw new Error(`HTTP error! Status: ${res.status}`);
+                }
+                return res.json();
+            })
+            .then(data => setBlogs(data))
             .catch(error => {
                 console.error('Error fetching data:', error);
             });
     }, []);
+    
 
     const bookMarkButton = (blog) => {
         
