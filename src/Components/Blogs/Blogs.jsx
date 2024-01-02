@@ -70,11 +70,7 @@ const Blogs = () => {
 
              
        {/* Spent time section */}
-      {
-       
-          
-
-      }
+     
 
            
         </div>
