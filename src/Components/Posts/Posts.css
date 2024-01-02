@@ -44,6 +44,8 @@
 .bookmark-area{
     display: flex;
     text-align: center;
+    position: sticky;
+    top: 0;
 }
 
 .bookmark-btn-icon{

@@ -2,15 +2,18 @@ import React from 'react';
 
 const Bookmark = (props) => {
     const blogTopic = props.blogTopic;
-    console.log(props.author)
 
-   
     return (
         <div>
-             <h3>All book marks showing here:{blogTopic.length} </h3>
-             <div>
-               <p>{blogTopic.author}</p> 
-             </div>
+            <h3>All bookmarks showing here: {blogTopic.length}</h3>
+            <div>
+                {blogTopic.map(blog => (
+                    <div key={blog.id}>
+                        <p>{blog.author}</p>
+                        
+                    </div>
+                ))}
+            </div>
         </div>
     );
 };
